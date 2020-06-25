@@ -56,3 +56,7 @@ dkms.conf
 
 # Build folders
 build/
+target/
+
+# Resource files
+*.gresource
