@@ -26,6 +26,12 @@ Print final surface to stdout (useful to pipe with other tools):
 grim -g "$(slurp)" - | swappy -f - -o - | pngquant -
 ```
 
+Manually select an area using [grimshot](https://github.com/swaywm/sway/blob/master/contrib/grimshot.1.scd):
+
+```sh
+grimshot save area - | swappy -f -
+```
+
 Grab a swappshot from a specific window under Sway, using `swaymsg` and `jq`:
 
 ```sh
